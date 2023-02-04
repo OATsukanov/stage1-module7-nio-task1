@@ -12,10 +12,8 @@ public class FileReader {
         String profileString = "";
 
         try (FileInputStream inputStream = new FileInputStream(file)) {
-            int c;
-            while ((c = inputStream.read()) != -1) {
-                c = inputStream.read();
-                System.out.println(c);
+            while (inputStream.read() != -1) {
+                break;
             }
         } catch (IOException e){
             e.printStackTrace();
