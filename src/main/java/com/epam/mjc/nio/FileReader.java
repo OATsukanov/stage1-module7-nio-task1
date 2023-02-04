@@ -14,6 +14,7 @@ public class FileReader {
         try (FileInputStream inputStream = new FileInputStream(file)) {
             int c;
             while ((c = inputStream.read()) != -1) {
+                c = inputStream.read();
             }
         } catch (IOException e){
             e.printStackTrace();
