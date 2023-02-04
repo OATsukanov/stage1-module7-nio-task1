@@ -15,6 +15,7 @@ public class FileReader {
             int c;
             while ((c = inputStream.read()) != -1) {
                 c = inputStream.read();
+                System.out.println(c);
             }
         } catch (IOException e){
             e.printStackTrace();
